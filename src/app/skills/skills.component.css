@@ -1,0 +1,12 @@
+.icon{
+  height: 120px;
+  width: 120px;
+  padding: 20px;
+}
+
+h6{
+  padding-top: 10px;
+  padding-left: 15px;
+  align-items: center;
+  justify-content: center;
+}
