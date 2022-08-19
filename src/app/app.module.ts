@@ -10,12 +10,17 @@ import { ResumeComponent } from './resume/resume.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ServicesService } from './formServices.service';
 
 
 @NgModule({
   declarations: [AppComponent, HeroComponent, HeaderComponent, AboutComponent, ResumeComponent, SkillsComponent, PortfolioComponent, ContactComponent],
-  imports: [BrowserModule, AppRoutingModule, ],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule,ReactiveFormsModule, FormsModule,
+    
+    HttpClientModule ],
+  providers: [ServicesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
